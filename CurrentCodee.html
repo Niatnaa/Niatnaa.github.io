@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang "en">
+<head>
+    
+    <meta charset="UTF-8">
+     <!-- Title -->
+    <title> Weather Application  </title>
+    
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet"href="style.css">
+  
+    </head>
+    
+    <body>
+        
+        <!-- Nav bar -->
+       <nav class="navbar navbar-default "  id="nav_bar"> 
+          
+        <div class="container">
+           <div class ="navbar-header">
+               
+               <a href="WeatherApp.html" class="navbar-brand navbar-link weather">
+                <!-- The maker of the application. -->
+                   <strong>Amazing Weather Application made by Niatna Tesfaldet</strong> 
+                   
+               </a>       
+               
+            </div> 
+            <div class="collapse navbar-collapse" id="navcol">
+            <ul class="nav navbar-nav navbar-right" id="nav_list">
+                
+                 <!-- Links to the subpages. -->
+                <li><a href="current.html">Current weather</a></li>
+                <li><a href="https://openweathermap.org/" target="_blank">Open Weather Map</a></li>
+                
+                </ul>
+            
+            </div>
+            
+           </div>
+        
+        </nav> 
+                
+        <div class="container" style="height: 600">
+        <div class="row" id= "cityDiv">
+           
+              </div>
+            </div>
+             <span id="error" class="text-center"></span>
+            <div class="row form-group form-inline" id="cityDiv">
+            <input type="text" name="city" id="city" class= "form-control" placeholder= "Hi, put the city name here please."
+                   style="margin-top:10px;">
+                
+                 <!-- Button -->
+                 <button id="submitCity" class="btn btn-primary">
+            Search the city!
+            
+            </button>
+              </div>    
+       
+         <!-- Show weather -->
+        <div id="showWeather">
+        </div>
+         <!-- Image -->
+        <img src="http://www.ardmore-lodge.com/template/imgs/continentOutlines/world.png" width= "600" height="400"> 
+        
+        
+        <div class="row">
+            <p style= "#b30000" class="text-center"> Copyright &copy; Weather App</p>
+            </div>
+        
+        <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script src="weather.js"> </script>
+       
+        
+    </body>
+    
+    </html>
