@@ -82,7 +82,7 @@ image1.src="sun.gif"
         </script>
             </div>
                </div>
-            <img src="continenten.png" width= "650" height="450"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Beyonce.jpg" width= "650" height="450"> 
             
             
      
