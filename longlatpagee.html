@@ -65,7 +65,11 @@ function getLocation() {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
-
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+    
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
