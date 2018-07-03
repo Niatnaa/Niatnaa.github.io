@@ -63,7 +63,7 @@ function getLocation() {
 
     
 function showPosition(position) {
-    var latitudelongitude = position.coords.latitude + "," + position.coords.longitude;
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
     +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
     document.getElementById("locatie").innerHTML = "<img src='"+img_url+"'>";
@@ -73,7 +73,7 @@ function showPosition(position) {
          <!-- Image -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/1024px-World_map_blank_without_borders.svg.png" width= "650" height="450">  
         
-                
+        
         <div class="row">
             <p style= "#b30000" class="text-center"> Copyright &copy; Weather App</p>
             </div>
