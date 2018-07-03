@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang "en">
+<head>
+    
+    <meta charset="UTF-8">
+     <!-- Title -->
+    <title> Weather Application  </title>
+    
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet"href="style.css">
+  
+    </head>
+    
+    <body>
+        
+        <!-- Nav bar -->
+       <nav class="navbar navbar-default "  id="nav_bar"> 
+          
+       
+           <div class ="navbar-header">
+               
+               <a href=" https://niatnaa.github.io/" class="navbar-brand navbar-link weather">
+                <!-- The maker of the application. -->
+                   <strong>Amazing Weather Application made by Niatna Tesfaldet</strong> 
+                   
+               </a>       
+               
+            </div> 
+           
+            <ul class="nav navbar-nav navbar-right" id="nav_list">
+                
+                 <!-- Links to the subpages. -->
+                      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Home Page/ Weather Map <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href=" https://niatnaa.github.io/">Home page</a></li>
+         <li><a href="https://openweathermap.org/" target="_blank">Open Weather Map</a></li>
+             <li><a href="CurrentCodee.html">Current Weather</a></li>
+        </ul>
+      </li>
+    </ul>
+            
+          
+          
+        
+        </nav> 
+                
+
+        
+        
+<button onclick="getLocation()">Lat/Longtitude</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+         <!-- Image -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/1024px-World_map_blank_without_borders.svg.png" width= "300" height="300"> 
+        
+        
+        <div class="row">
+            <p style= "#b30000" class="text-center"> Copyright &copy; Weather App</p>
+            </div>
+        
+        <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script src="weatherr.js"> </script>
+       
+        
+    </body>
+    
+    </html>
