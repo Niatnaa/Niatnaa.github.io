@@ -46,12 +46,27 @@
         </nav> 
                 
 
-<form method="post" action='data.php'>
-  <p>Enter Your,City ,Country</p>
-  <textarea name='address' placeholder='City ,Country'></textarea>
-  <input type="submit" name="submit_address" value="Get Coordinates">
-</form>
+<button onclick="getLocation()">Lat/Longitude</button>
 
+<div id="locatie"></div>
+
+<script>
+var x = document.getElementById("locatie");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation can not be read at the moment. Try it again.";
+    }
+}
+
+    
+function showPosition(position) {
+   x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
 
          <!-- Image -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/1024px-World_map_blank_without_borders.svg.png" width= "650" height="450">  
